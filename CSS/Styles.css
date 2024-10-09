@@ -1,0 +1,94 @@
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    font-family: Verdana;
+    font-size: 28px;
+    color: azure;
+    text-align: center;
+    border-color: blanchedalmond;
+    border-width: 2px;
+    }
+
+nav {
+    border-color: rgb(187, 113, 22);
+    border-style: double;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    text-align: left;
+    font-weight: bold;
+    font-size: medium;
+    font-family: Verdana;
+
+}
+
+h2 {
+    font-family: Verdana;
+    font-size: 22px;
+    color: aliceblue;
+    text-align: center;
+    border: 0cap;
+    border-style: solid;
+    border-color: aqua;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px; 
+
+}
+
+
+        .dropbtn {
+            background-color: #564caf;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #cca3d4;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          
+          .dropdown-content a:hover {background-color: #f1f1f1}
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .dropdown:hover .dropbtn {
+            background-color: #c715a0;
+          }
+gallery {
+    margin: 5px;
+    border: 2px solid #f1f1f1;
+    float: left;
+    width: 180px;
+
+}
