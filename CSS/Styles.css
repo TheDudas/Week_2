@@ -1,14 +1,20 @@
+* {
+    box-sizing: border-box;
+    
+}
+
 body {
-    background-color: lightgray;
+    background-color: #ebeaea;
 }
 
 h1 {
     font-family: Verdana;
     font-size: 28px;
-    color: azure;
+    color: #000000;
     text-align: center;
-    border-color: blanchedalmond;
-    border-width: 2px;
+    border: solid;
+    border-color: #0f0f0f11;
+    border-width: 14px;
     }
 
 nav {
@@ -16,19 +22,20 @@ nav {
     border-style: double;
     box-sizing: border-box;
 }
-
-ul {
+/* ul.dropdown specifiies only the drop down, not other Ul in lists */
+ul.dropdown {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.nav {
+/* commented out the .nav that is no longer needed.  */
+/* .nav {
     text-align: left;
     font-weight: bold;
     font-size: medium;
     font-family: Verdana;
 
-}
+} */
 
 h2 {
     font-family: Verdana;
@@ -85,10 +92,51 @@ h2 {
           .dropdown:hover .dropbtn {
             background-color: #c715a0;
           }
-gallery {
+div.gallery {
     margin: 5px;
     border: 2px solid #f1f1f1;
     float: left;
-    width: 180px;
+    width: 200px;
+}
+
+div.gallery img  {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+footer  {
+    bottom: auto;
 
 }
+
+table, th, td  {
+    border: 1px solid;
+    max-width: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+    box-shadow: #180301;
+    padding: 5px 15px 5px 10px;
+}
+
+th {
+    background-color: #cca3d4;
+    box-shadow: #000000;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+/* thead {
+    text-align: center;
+    font-style: bold;
+    background-color: #c715a0;
+
+} */
+
+/* td {
+    font-style: bold;
+    text-align: center;
+} */
