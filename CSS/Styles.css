@@ -4,9 +4,20 @@
 }
 
 body {
-    background-color: #ebeaea;
+    background-image: url("/Images/Balloon_boat2.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center; 
+    background-position-x: center;
+    padding-top: 40px;
 }
+.intro  {
+    border: 2px solid;
+    background-color: aliceblue;
+    font-style: normal;
+    border-radius: 5px;
+    box-shadow: 3px;
 
+}
 h1 {
     font-family: Verdana;
     font-size: 28px;
@@ -40,7 +51,7 @@ ul.dropdown {
 h2 {
     font-family: Verdana;
     font-size: 22px;
-    color: aliceblue;
+    color: #000000;
     text-align: center;
     border: 0cap;
     border-style: solid;
@@ -52,6 +63,10 @@ h2 {
 
 }
 
+hr {
+    line-height: 5px;
+    color: black;
+}
 
         .dropbtn {
             background-color: #564caf;
@@ -97,6 +112,7 @@ div.gallery {
     border: 2px solid #f1f1f1;
     float: left;
     width: 200px;
+    padding-bottom: 20px;
 }
 
 div.gallery img  {
@@ -106,11 +122,15 @@ div.gallery img  {
 div.desc {
     padding: 15px;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 footer  {
     bottom: auto;
-
+    position:absolute;
+    bottom: 0;
+    left: 0; 
+    z-index: 8;
 }
 
 table, th, td  {
@@ -128,7 +148,16 @@ th {
     border-radius: 5px;
     border: 2px solid;
 }
+.space {
+    visibility: hidden;
+    border: 10px 50px 20px 10px;
+    padding: 20px 30px 20px 30px;
+    z-index: 5;
+}
 
+h4 {
+    z-index: 3;
+}
 /* thead {
     text-align: center;
     font-style: bold;
