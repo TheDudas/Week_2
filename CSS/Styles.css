@@ -15,7 +15,7 @@ body {
 This should help the reader but it also looks weird. */
 .intro  {
     border: 2px solid;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.363);
     font-style: normal;
     border-radius: 5px;
     box-shadow: 3px;
@@ -51,12 +51,21 @@ ul.dropdown {
 
 } */
 
+ul.likes {
+    border-style: groove;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: rgba(240, 255, 255, 0.329);
+}
 /* h2 heading configuration */
 h2 {
     font-family: Verdana;
     font-size: 22px;
     color: #000000;
-    text-align: center;
+    text-align: left;
     border: 0cap;
     border-style: solid;
     border-color: aqua;
@@ -171,7 +180,10 @@ th {
 /* header 4 options for text in Footer. z-index makes it stay below others with a lower z index. */
 h4 {
     z-index: 3;
-}
+    font-size: larger;
+    font-family: verdana;
+    padding-left: 20px;
+    }
 /* thead {
     text-align: center;
     font-style: bold;
