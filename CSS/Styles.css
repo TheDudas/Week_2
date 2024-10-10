@@ -2,7 +2,8 @@
     box-sizing: border-box;
     
 }
-
+/* This gives the body an image as a background. Centers the image and adds space to the top
+ */
 body {
     background-image: url("/Images/Balloon_boat2.jpg");
     background-repeat: no-repeat;
@@ -10,15 +11,17 @@ body {
     background-position-x: center;
     padding-top: 40px;
 }
+/* Created an intro element to highight the text that is in front of the image
+This should help the reader but it also looks weird. */
 .intro  {
     border: 2px solid;
     background-color: aliceblue;
     font-style: normal;
     border-radius: 5px;
     box-shadow: 3px;
-
 }
-h1 {
+/* h1 header configurations,   */
+h1 { 
     font-family: Verdana;
     font-size: 28px;
     color: #000000;
@@ -27,7 +30,7 @@ h1 {
     border-color: #0f0f0f11;
     border-width: 14px;
     }
-
+/*  Nav bar designation and prep for Dropdowns */
 nav {
     border-color: rgb(187, 113, 22);
     border-style: double;
@@ -48,6 +51,7 @@ ul.dropdown {
 
 } */
 
+/* h2 heading configuration */
 h2 {
     font-family: Verdana;
     font-size: 22px;
@@ -62,12 +66,13 @@ h2 {
     padding-right: 5px; 
 
 }
-
+/*  created a line but not sure if I will keep it.  */
 hr {
     line-height: 5px;
     color: black;
 }
 
+/*  dropdown button and controls for the Dropdown navigation option. */
         .dropbtn {
             background-color: #564caf;
             color: white;
@@ -76,12 +81,13 @@ hr {
             border: none;
             cursor: pointer;
           }
-          
+          /* positions the Dropdown data display */
           .dropdown {
             position: relative;
             display: inline-block;
           }
-          
+          /*  positions the dropdown content and configures content text
+           */
           .dropdown-content {
             display: none;
             position: absolute;
@@ -90,23 +96,26 @@ hr {
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
           }
-          
+          /*  more drop down content for the a element in Dropdown content */
           .dropdown-content a {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
           }
-          
+          /*  allows the user to see the background change when they hover the mouse over the Content. */
           .dropdown-content a:hover {background-color: #f1f1f1}
-          
+                   /* dropdown:hover for dropdown content in a block*/
+
           .dropdown:hover .dropdown-content {
             display: block;
           }
-          
+          /*  the dropdown hover background color for the dropdown button changes. */
           .dropdown:hover .dropbtn {
             background-color: #c715a0;
           }
+
+/*  created a div for the gallery to define photo areas and borders. */
 div.gallery {
     margin: 5px;
     border: 2px solid #f1f1f1;
@@ -114,17 +123,19 @@ div.gallery {
     width: 200px;
     padding-bottom: 20px;
 }
-
+/*  sets the width and height for images in the gallery */
 div.gallery img  {
     width: 100%;
     height: auto;
 }
+/*  sets the alignment, and white space for the descriptions of the images in the gallery */
 div.desc {
     padding: 15px;
     text-align: center;
     padding-bottom: 5px;
 }
 
+/*  puts the footer at the bottom of the page at all times */
 footer  {
     bottom: auto;
     position:absolute;
@@ -132,7 +143,7 @@ footer  {
     left: 0; 
     z-index: 8;
 }
-
+/*  table configurations, spacing, width, backgrounds, shadows */
 table, th, td  {
     border: 1px solid;
     max-width: 100%;
@@ -142,12 +153,14 @@ table, th, td  {
     padding: 5px 15px 5px 10px;
 }
 
+/*  configured the table header to have a different background and configurations. */
 th {
     background-color: #cca3d4;
     box-shadow: #000000;
     border-radius: 5px;
     border: 2px solid;
 }
+/*  added a space element to move the table up away from the footer....  */
 .space {
     visibility: hidden;
     border: 10px 50px 20px 10px;
@@ -155,6 +168,7 @@ th {
     z-index: 5;
 }
 
+/* header 4 options for text in Footer. z-index makes it stay below others with a lower z index. */
 h4 {
     z-index: 3;
 }
