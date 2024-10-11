@@ -1,10 +1,14 @@
 * {
     box-sizing: border-box;
-    
 }
 /* This gives the body an image as a background. Centers the image and adds space to the top
  */
-body {
+
+container {
+    display: flexbox;
+}
+
+ body {
     background-image: url("/Images/Balloon_boat2.jpg");
     background-repeat: no-repeat;
     background-position-y: center; 
