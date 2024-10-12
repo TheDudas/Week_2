@@ -7,6 +7,9 @@
 container {
     display: flexbox;
 }
+.container {
+    display: flex;
+}
 
  body {
     background-image: url("/Images/Balloon_boat2.jpg");
