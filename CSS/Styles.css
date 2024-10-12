@@ -16,7 +16,7 @@
 This should help the reader but it also looks weird. */
 .intro  {
     border: 2px solid;
-    background-color: rgba(240, 248, 255, 0.158);
+    background-color: rgba(240, 248, 255, 0.411);
     font-style: normal;
     border-radius: 5px;
     box-shadow: 3px;
@@ -31,36 +31,7 @@ h1 {
     border-color: #0f0f0fa1;
     border-width: 14px;
     }
-/*  Nav bar designation and prep for Dropdowns */
-nav {
-    border-color: rgb(187, 113, 22);
-    border-style: double;
-    box-sizing: border-box;
-}
-/* ul.dropdown specifiies only the drop down, not other Ul in lists */
-ul.dropdown {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-/* commented out the .nav that is no longer needed.  */
-/* .nav {
-    text-align: left;
-    font-weight: bold;
-    font-size: medium;
-    font-family: Verdana;
 
-} */
-
-ul.likes {
-    border-style: groove;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: hidden;
-    border-left: hidden;
-    border-right: hidden;
-    background-color: rgba(240, 255, 255, 0.329);
-}
 /* h2 heading configuration */
 h2 {
     font-family: Verdana;
@@ -74,14 +45,60 @@ h2 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 5px; 
+}
+h3 {
+    font-family: Verdana, sans-serif;
+    font-size: 42;
+    color:#000000;
+    text-align: center;
+    text-indent: 10pt;
+    text-shadow: whitesmoke;
+    text-shadow: 5%;
 
 }
+/* header 4 options for text in Footer. z-index makes it stay below others with a lower z index. */
+h4 {
+    font-size: xx-large;
+    font-style: bold;
+    font-family: verdana;
+    padding-left: 20px;
+    color: #dd2323;
+    }
+
+    hr {
+        line-height: 5px;
+        color: black;
+    }
+
+/*  Nav bar designation and prep for Dropdowns */
+nav {
+    border-color: rgb(187, 113, 22);
+    border-style: double;
+    box-sizing: content-box;
+}
+/* ul.dropdown specifiies only the drop down, not other Ul in lists */
+ul.dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.likes {
+    border-style: groove;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: rgba(240, 255, 255, 0.452);
+}
+
 /*  created a line but not sure if I will keep it.  */
-hr {
-    line-height: 5px;
-    color: black;
-}
 
+main {
+    background-color: antiquewhite;
+    flex-grow: 1;
+}
 /*  dropdown button and controls for the Dropdown navigation option. */
         .dropbtn {
             background-color: #877de4;
@@ -101,7 +118,7 @@ hr {
           .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #cca3d4;
+            background-color: #e2cde2fd;
             min-width: 160px;
             box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
             z-index: 1;
@@ -124,12 +141,9 @@ hr {
           .dropdown:hover .dropbtn {
             background-color: #a698b98a;
           }
-thead {
-    text-align: center;
-}
 
 /*  table configurations, spacing, width, backgrounds, shadows */
-table, th, td  {
+table, th, td, thead  {
     border: 1px solid;
     max-width: 100%;
     margin: auto;
@@ -153,13 +167,6 @@ th {
     z-index: 5;
 }
 
-/* header 4 options for text in Footer. z-index makes it stay below others with a lower z index. */
-h4 {
-    font-size: xx-large;
-    font-family: verdana;
-    padding-left: 20px;
-    color: #83b60d;
-    }
 
 fieldset {
     background-color: aliceblue;
@@ -171,20 +178,13 @@ fieldset {
 /* container of Flex box for photos page */
 .container {
     display: flex;
+    flex-wrap: wrap;
 }
 .container>* {
     margin: 0 10px;
-    flex: 1;
+    flex: 2;
 }
-/* .container {
-    display: flex;
-    flex-flow: column wrap;
-    flex-basis: auto;
-    width: 10px;
-    height: 10%;
-    margin: auto;
-    justify-content: last baseline;
-  } */
+
 
   /* arrangement of photos for flexbox on photos pg3 */
 .photo, .desc  {
@@ -209,10 +209,7 @@ fieldset {
     
 } */
 
-main {
-    background-color: antiquewhite;
-    flex-grow: 1;
-}
+
  
 /*  puts the footer at the bottom of the page at all times */
 .page-footer  {
