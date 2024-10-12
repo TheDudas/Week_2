@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
+
 /* This gives the body an image as a background. Centers the image and adds space to the top
  */
-
-
  body {
     background-image: url("/Images/Balloon_boat2.jpg");
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ h1 {
     color: #000000;
     text-align: center;
     border: solid;
-    border-color: #0f0f0f11;
+    border-color: #0f0f0fa1;
     border-width: 14px;
     }
 /*  Nav bar designation and prep for Dropdowns */
@@ -84,11 +84,11 @@ hr {
 
 /*  dropdown button and controls for the Dropdown navigation option. */
         .dropbtn {
-            background-color: #564caf;
+            background-color: #877de4;
             color: white;
             padding: 16px;
             font-size: 16px;
-            border: none;
+            border: silver;
             cursor: pointer;
           }
           /* positions the Dropdown data display */
@@ -103,7 +103,7 @@ hr {
             position: absolute;
             background-color: #cca3d4;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
             z-index: 1;
           }
           /*  more drop down content for the a element in Dropdown content */
@@ -122,9 +122,11 @@ hr {
           }
           /*  the dropdown hover background color for the dropdown button changes. */
           .dropdown:hover .dropbtn {
-            background-color: #c715a0;
+            background-color: #a698b98a;
           }
-
+thead {
+    text-align: center;
+}
 
 /*  table configurations, spacing, width, backgrounds, shadows */
 table, th, td  {
@@ -166,32 +168,38 @@ fieldset {
 
 }
 
-
+/* container of Flex box for photos page */
 .container {
     display: flex;
-    align-items: baseline;
+}
+.container>* {
+    margin: 0 10px;
+    flex: 1;
+}
+/* .container {
+    display: flex;
     flex-flow: column wrap;
     flex-basis: auto;
-    width: 2000px;
-    height: 3200px;
+    width: 10px;
+    height: 10%;
     margin: auto;
     justify-content: last baseline;
+  } */
 
-  }
-
-.photo  {
+  /* arrangement of photos for flexbox on photos pg3 */
+.photo, .desc  {
     display: flex;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     flex-basis: content;
-    border-style: solid;
-    border-color:rgb(187, 113, 22) ;
+    /* border-style: solid;
+    border-color:rgb(187, 113, 22) ; */
     justify-content: space-evenly;
 }
-
+/* 
 .desc {
     text-align: center;
-}
+} */
 /* .photo  {
  display: flex;
  flex: auto ;
@@ -210,7 +218,7 @@ main {
 .page-footer  {
     bottom: auto;
     bottom: 0;
-    left: 0; 
+    left: 100px; 
     flex-grow: 0;
     flex-shrink: 0;
 }
