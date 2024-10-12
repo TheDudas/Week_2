@@ -19,7 +19,7 @@ container {
 This should help the reader but it also looks weird. */
 .intro  {
     border: 2px solid;
-    background-color: rgba(240, 248, 255, 0.363);
+    background-color: rgba(240, 248, 255, 0.158);
     font-style: normal;
     border-radius: 5px;
     box-shadow: 3px;
